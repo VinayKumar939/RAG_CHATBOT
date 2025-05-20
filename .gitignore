@@ -1,3 +1,61 @@
+# ========================
+# Python Bytecode
+# ========================
 __pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ========================
+# Virtual Environments
+# ========================
+.venv/
+venv/
+env/
+ENV/
+
+# ========================
+# Environment & Secrets
+# ========================
 .env
-*.pyc
+.env.*
+
+# ========================
+# Logs and Temp Files
+# ========================
+*.log
+*.tmp
+*.bak
+# ========================
+# IDE Configs
+# ========================
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# ========================
+# OS-Specific Files
+# ========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ========================
+# Vector Stores & Embeddings
+# ========================
+*.faiss
+*.chroma
+chroma.db/
+*.db
+*.sqlite
+# ========================
+# PyTest / Coverage
+# ========================
+.cache/
+.coverage
+htmlcov/
+.tox/
+.pytest_cache/
+
+
