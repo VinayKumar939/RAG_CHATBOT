@@ -18,7 +18,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system with a fee
 
 ## 📦 Project Structure
 
-├── rag_pipeline/         # Main logic: chunking, embedding, retrieval
+├── ### rag_pipeline/         # Main logic: chunking, embedding, retrieval
 ├── utils/                # Helper functions
 ├── main.py               # Entry point
 ├── requirements.txt      # Dependencies
@@ -45,8 +45,8 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 Create a .env file based on .env.example with API keys, DB configs, etc.
 
 ### How to Run the App
-### Running the App
- bash python main.py
+ bash 
+ python main.py
 
 ### Contributors
 - Vinay Kumar Mannava
