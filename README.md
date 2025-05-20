@@ -44,14 +44,11 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 ### -Configure  Environment 
 Create a .env file based on .env.example with API keys, DB configs, etc.
 
-### How to Run the App**
+### How to Run the App
 ### Running the App
-```bash python main.py
+ bash python main.py
 
-### Sample Use Case
-
-
-###Contributors
+''' Contributors
 - Vinay Kumar Mannava
 
 
