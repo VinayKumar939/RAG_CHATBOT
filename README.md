@@ -48,7 +48,7 @@ Create a .env file based on .env.example with API keys, DB configs, etc.
 ### Running the App
  bash python main.py
 
-''' Contributors
+### Contributors
 - Vinay Kumar Mannava
 
 
