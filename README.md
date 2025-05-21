@@ -16,15 +16,34 @@ This project implements a Retrieval-Augmented Generation (RAG) system with a fee
  <img width="468" alt="image" src="https://github.com/user-attachments/assets/b65a5646-fbfb-4c59-b05b-7aaede9a1312" />
 
 
-## 📦 Project Structure
+RAG_CHATBOT/
+├── data/
+│   └── interviews/             # ✅ Uploaded interview documents (.txt, .pdf, .docx)
+│       ├── amazon_john.txt
+│       ├── google_arya.pdf
+│       └── tcs_ravi.docx
+│
+├── loaders/
+│   └── document_loader.py      # 🔁 Extracts raw text from uploaded documents
+│
+├── utils/
+│   └── chunking.py             # 🔁 Contains recursive chunking logic for splitting text
+│
+├── embeddings/
+│   └── embedder.py             # 🔁 Generates embeddings from chunks using OpenAI or other models
+│
+├── retriever/
+│   └── faiss_retriever.py      # 🔁 Manages storage and retrieval from vector database (e.g., FAISS)
+│
+├── scripts/
+│   ├── test_chunking.py        # 🔎 Script to test chunking pipeline independently
+│   └── test_embedding.py       # 🔎 (Optional) Script to test embedding generation and preview vectors
+│
+├── main.py                     # 🚀 Main RAG chatbot pipeline and Streamlit/UI app
+├── requirements.txt            # 📦 Python dependencies
+├── .gitignore                  # ❌ Excludes virtual envs, logs, temp files, etc.
+└── README.md                   # 📘 Overview, setup instructions, and usage guide
 
-├── ### rag_pipeline/         # Main logic: chunking, embedding, retrieval
-├── utils/                # Helper functions
-├── main.py               # Entry point
-├── requirements.txt      # Dependencies
-├── .env.example          # Example environment variables
-├── README.md             # This file
-└── tests/                # Unit and integration tests
 
 
 ## 🛠️ Setup Instructions
