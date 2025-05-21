@@ -15,6 +15,7 @@ This project implements a Retrieval-Augmented Generation (RAG) system with a fee
 ## 🧱 Architecture
  <img width="468" alt="image" src="https://github.com/user-attachments/assets/b65a5646-fbfb-4c59-b05b-7aaede9a1312" />
 
+## Project Structure
 
 RAG_CHATBOT/
 ├── data/
