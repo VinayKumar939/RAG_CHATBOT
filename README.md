@@ -19,32 +19,31 @@ This project implements a Retrieval-Augmented Generation (RAG) system with a fee
 
 RAG_CHATBOT/
 ├── data/
-│   └── interviews/             # ✅ Uploaded interview documents (.txt, .pdf, .docx)
+│   └── interviews/             ✅ Uploaded interview documents (.txt, .pdf, .docx)
 │       ├── amazon_john.txt
 │       ├── google_arya.pdf
 │       └── tcs_ravi.docx
 │
 ├── loaders/
-│   └── document_loader.py      # 🔁 Extracts raw text from uploaded documents
+│   └── document_loader.py      📄 Extracts raw text from uploaded documents
 │
 ├── utils/
-│   └── chunking.py             # 🔁 Contains recursive chunking logic for splitting text
+│   └── chunking.py             ✂️  Contains recursive chunking logic for splitting text
 │
 ├── embeddings/
-│   └── embedder.py             # 🔁 Generates embeddings from chunks using OpenAI or other models
+│   └── embedder.py             🧠 Generates embeddings from chunks (OpenAI / other models)
 │
 ├── retriever/
-│   └── faiss_retriever.py      # 🔁 Manages storage and retrieval from vector database (e.g., FAISS)
+│   └── faiss_retriever.py      🔍 Handles vector search and retrieval using FAISS or Chroma
 │
 ├── scripts/
-│   ├── test_chunking.py        # 🔎 Script to test chunking pipeline independently
-│   └── test_embedding.py       # 🔎 (Optional) Script to test embedding generation and preview vectors
+│   ├── test_chunking.py        🧪 Script to test chunking pipeline independently
+│   └── test_embedding.py       🧪 (Optional) Script to test embeddings and preview vectors
 │
-├── main.py                     # 🚀 Main RAG chatbot pipeline and Streamlit/UI app
-├── requirements.txt            # 📦 Python dependencies
-├── .gitignore                  # ❌ Excludes virtual envs, logs, temp files, etc.
-└── README.md                   # 📘 Overview, setup instructions, and usage guide
-
+├── main.py                     🚀 Main RAG chatbot pipeline and Streamlit/UI app
+├── requirements.txt            📦 Python dependencies
+├── .gitignore                  🚫 Excludes virtual envs, logs, temp files, etc.
+└── README.md                   📘 Project overview, setup instructions, and usage guide
 
 
 ## 🛠️ Setup Instructions
